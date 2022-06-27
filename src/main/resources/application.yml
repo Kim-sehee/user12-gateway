@@ -60,15 +60,15 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: product
+        - id: user12-product
           uri: http://product:8080
           predicates:
             - Path=/product/**,/products/**,/goods/**
-        - id: order
+        - id: user12-order
           uri: http://order:8080
           predicates:
             - Path=/orders/**
-        - id: delivery
+        - id: user12-delivery
           uri: http://delivery:8080
           predicates:
             - Path=/deliveries/**
